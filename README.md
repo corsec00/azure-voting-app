@@ -16,5 +16,5 @@ Este exemplo cria uma aplicação multicontêiner num cluster Azure Kubernetes S
 Para percorrer uma experiência completa em que esse código é empacotado em imagens de contêiner, carregado no Registro de Contêiner do Azure (ACR) e, em seguida, executado em um cluster do AKS.
 ## Contributing
 
-Versão: 10/Out/2023
+Versão: 12/Out/2023
 
