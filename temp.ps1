@@ -12,7 +12,7 @@ docker-compose down
 az login
 $RG = ""
 $myACR = ""
-# $loginServer =""
+#$loginServer =""
 az acr create --location "North Central US" --sku standard --admin-enable true --resource-group $RG --name $myACR 
 az acr login --name $myACR
 az acr list --resource-group $RG --query "[].{acrLoginServer:logiServer}" --output table
@@ -21,3 +21,5 @@ docker images
 docker push myacrleoss001.azurecr.io/azure-vote-front:v2
 az acr repository list --name $myACR --output table
 az acr repository show-tags --name $myACR --repository azure-vote-front --output table
+
+az acr delete -n $myACR --yes
